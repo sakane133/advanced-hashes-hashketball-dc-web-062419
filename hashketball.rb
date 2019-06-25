@@ -234,6 +234,7 @@ def most_points_scored
   game_hash.each do |location, team|
     team[:players].each do |player, stats|
       if points < stats[:points]
+        player
     end
   end
 end
